@@ -1,0 +1,10 @@
+# OS or IDE folders/files to ignore
+.idea/
+node_modules/
+*~
+._*
+*.DS_Store
+*.sublime-*
+thumb.db
+Thumbs.db
+desktop.ini

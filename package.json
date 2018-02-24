@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "homepage": "https://github.com/mavisland/epigraph",
   "author": "Tanju Yıldız <ben@tanjuyildiz.com>",
-  "description": "epigraph is a lightweight, responsive and modern CSS framework.",
+  "description": "A lightweight, responsive and modern CSS framework.",
   "main": "index.js",
   "license": "MIT",
   "repository": {
@@ -20,5 +20,13 @@
     "responsive",
     "front-end",
     "modern"
-  ]
+  ],
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.9.2",
+    "gulp-less": "^4.0.0",
+    "gulp-plumber": "^1.2.0",
+    "gulp-rename": "^1.2.2",
+    "less-plugin-autoprefix": "^1.5.1"
+  }
 }
