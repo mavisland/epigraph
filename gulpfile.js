@@ -1,9 +1,6 @@
 var gulp = require('gulp');
 var less = require('gulp-less');
-var lessPluginAutoPrefix = require('less-plugin-autoprefix');
-var autoprefixPlugin = new lessPluginAutoPrefix({
-  browsers: ["last 2 versions"]
-});
+var autoprefixer = require('gulp-autoprefixer');
 var cleancss = require('gulp-clean-css');
 var plumber = require('gulp-plumber');
 var rename = require('gulp-rename');
@@ -16,8 +13,9 @@ gulp.task('build', function () {
         this.emit('end');
       }
     }))
-    .pipe(less({
-      plugins: [autoprefixPlugin]
+    .pipe(less())
+    .pipe(autoprefixer({
+      browsers: ['last 2 versions']
     }))
     .pipe(gulp.dest('dist'))
     .pipe(cleancss())
